@@ -3,6 +3,12 @@
 <head> Angel Serrano Website 
 <title>Page Title</title>
 <style>
+
+
+ rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 img {max-width: 100%;}
 ul {
 	background-color: Silver;
@@ -26,6 +32,12 @@ ul a {
 </nav>
 <main>
 	<img src="https://i.imgur.com/GYnxEic.jpg" width=40%>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
 </body>
 </main>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1tUPFQ54gqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
