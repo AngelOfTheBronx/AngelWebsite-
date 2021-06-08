@@ -62,45 +62,6 @@ ul a {
 </style>
 </head>
 <body><nav>
-<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
-
-<p>Click the light bulb to turn on/off the light.</p>
-
-<script>
-var i = 0;
-function changeImage() {
-  var videoGameImage = document.getElementById('myImage');
-  
-  if (i==0) {
-    
-    videoGameImage.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rocket_League_logo.svg/1200px-Rocket_League_logo.svg.png";
-    videoGameImage.width = "300";
-    i++;
-  } 
-  else if(i ==1) {
-    videoGameImage.src = "https://i.ytimg.com/vi/3iWS7ktNg9I/maxresdefault.jpg";
-	videoGameImage.width="300";
-    i++;
-  }
- else if(i ==2) {
-    videoGameImage.src = "https://images-na.ssl-images-amazon.com/images/I/510KWdgceEL.jpg";
-	videoGameImage.width="300";
-    i++;
-	}
- else if(i ==3) {
-    videoGameImage.src = "https://i.ytimg.com/vi/3iWS7ktNg9I/maxresdefault.jpg";
-	videoGameImage.width="300"
-    i=0;
-	}
-    
-}
-
-  function startTimer() {
- 	setInterval(changeImage(), 50);
-    }
-
-</script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -159,6 +120,44 @@ Math.floor(Math.random() * 11);
   <a href="#">letter to self</a>
    <a href="#"> contact</a>
 </div>
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the image to change it .</p>
+
+<script>
+var i = 0;
+function changeImage() {
+  var videoGameImage = document.getElementById('myImage');
+  
+  if (i==0) {
+    
+    videoGameImage.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rocket_League_logo.svg/1200px-Rocket_League_logo.svg.png";
+    videoGameImage.width = "300";
+    i++;
+  } 
+  else if(i ==1) {
+    videoGameImage.src = "https://i.ytimg.com/vi/3iWS7ktNg9I/maxresdefault.jpg";
+	videoGameImage.width="300";
+    i++;
+  }
+ else if(i ==2) {
+    videoGameImage.src = "https://images-na.ssl-images-amazon.com/images/I/510KWdgceEL.jpg";
+	videoGameImage.width="300";
+    i++;
+	}
+ else if(i ==3) {
+    videoGameImage.src = "https://i.ytimg.com/vi/3iWS7ktNg9I/maxresdefault.jpg";
+	videoGameImage.width="300"
+    i=0;
+	}
+    
+}
+
+  function startTimer() {
+ 	setInterval(changeImage(), 50);
+    }
+
+</script>
 	
 <main>
 </body>
